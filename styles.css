@@ -15,9 +15,8 @@ body {
   height: max-content;
   font-family: "Montserrat", sans-serif;
   width: 100%;
-  background-color: yellow;
+  background-color: pink;
   padding: 1rem 0;
-  
   position: sticky;
   z-index: 99;
   top: 0;
@@ -67,7 +66,7 @@ nav {
 }
 .nav-link {
   text-decoration: none;
-  color: #FFFAFA;
+  color: #333;
   margin: 0 0.5rem;
   padding: 0 0.6rem;
   transition: border-bottom 0.2s;
@@ -80,11 +79,11 @@ nav {
   }
 }
 .nav-link:hover {
-  color: #FFFAFA;
+  color: #e23d3d;
   border-bottom: 2px solid #e23d3d;
 }
 .nav-link:active {
-  color: #FFFAFA;
+  color: #f84848;
 }
 .flexible {
   display: flex;
@@ -95,7 +94,7 @@ nav {
 }
 .home-sec {
   font-family: "Montserrat", sans-serif;
-  background-color: #FFA500;
+  background-color: #ffffff;
   text-align: start;
   min-height: 60rem;
   height: auto;
@@ -146,15 +145,15 @@ nav {
   font-size: 2rem;
   border-radius: 0.4rem;
   padding: 2rem;
-  background-color: #FFA500	;
-  color: #00000;
+  background-color: #F67280;
+  color: #fafafa;
   outline: 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: all 0.2s;
 }
 
 .btn:hover {
-  background-color: #FFFAFA	;
+  background-color: #f84848;
   cursor: pointer;
 }
 .btn:active {
@@ -187,16 +186,16 @@ nav {
 #about img {
   max-width: 100%;
   height: auto;
-  background-color: white;
+  background-color: yellow;
   border-radius: 0.5rem;
   box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
 }
 #variatas {
-  background-color: #FFA500;
+  background-color: #e3e3e3;
 }
 .tile {
-  background-color: #FFFAFA;
-  height: 40rem;
+  background-color: #fafafa;
+  height: 65rem;
   width: 25rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 0.5rem;
@@ -222,7 +221,7 @@ nav {
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem 0;
-  color: #FFFAFA;
+  color: #e23d3d;
   margin: 0;
 }
 .tile p {
@@ -277,7 +276,7 @@ nav {
   font-size: 2.3rem;
 }
 #manfaat {
-  background-color:  #006400;
+  background-color: #f84848;
 }
 #benefits iframe {
   outline: 0;
@@ -287,8 +286,8 @@ nav {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
 }
 #contact {
-  background-color:  #FFA500;
-  color: #00000;
+  background-color: #FFC0CB;
+  color: #fafafa;
 }
 #contact h6 {
   font-size: 3rem;
@@ -317,9 +316,51 @@ input[type="email"] {
   font-weight: lighter;
 }
 
+.testi {
+  background-color: #fafafa;
+  height: 65rem;
+  width: 25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+@media (max-width: 680px) {
+  .testi {
+    width: auto;
+    max-width: 100%;
+    min-width: 20rem;
+    margin: 1.5rem auto;
+    height: auto;
+  }
+}
+.testi img {
+  width: 100%;
+  max-width: 48rem;
+  border-radius: 0.5rem;
+}
+.testi h4 {
+  font-size: 20px;
+  font-weight : bold;
+  margin-bottom: 5px;
+  color:#333333;
+  text-align:center;
+}
+.testi p {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  text-align:center;
+}
+.testi:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+}
+
 footer {
   font-size: 1.4rem;
-  background-color:  #FFA500;
+  background-color: #pink;
   text-align: center;
   padding: 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -330,20 +371,28 @@ footer a {
   text-decoration: none;
 }
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
-  width: 50px;
+  width: 10px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
 .fa-facebook {
   background: #3B5998;
+  color: white
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
   color: white;
 }
 .fa-instagram {
@@ -351,15 +400,3 @@ footer a {
   color: white;
 }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
